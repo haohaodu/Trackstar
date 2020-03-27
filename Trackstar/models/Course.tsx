@@ -13,6 +13,7 @@ export default class Course {
         this.complete = cp;
     }
 
+//will be used to update grade with evaluation grades
     cur_grade(){
         return Evaluation.grade;
     }
