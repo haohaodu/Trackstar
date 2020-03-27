@@ -13,7 +13,7 @@ export default class Course {
         this.complete = cp;
     }
 
-    // cur_grade(){
-    //     return Evaluation.grade;
-    // }
+    cur_grade(){
+        return Evaluation.grade;
+    }
 }
