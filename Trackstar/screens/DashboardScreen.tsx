@@ -78,10 +78,10 @@ const HomeScreen = props => {
           Welcome Back!
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Next Evaluation: PHIL 1200 - Test 1
+          Next Evaluation: {formatData.evalMapper.find(task.title)}
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Due March 10th
+          Due: {formatData.evalMapper.find(task.due_date)}
         </Text>
       </View>
       <ScrollView style={{marginTop: 50}}>
