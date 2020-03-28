@@ -14,4 +14,9 @@ export default class User {
     }
     return User.instance
   }
+
+//add something for if the database is empty
+  //static getdatabase() {}
+
+
 }
