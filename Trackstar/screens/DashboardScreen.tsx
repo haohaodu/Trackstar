@@ -78,7 +78,7 @@ const HomeScreen = props => {
           Welcome Back!
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Next Evaluation:  {console.log(await formatData.taskInfo.evalName)}
+          Next Evaluation:  {console.log(formatData.evaluation)}
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
           Due: 
