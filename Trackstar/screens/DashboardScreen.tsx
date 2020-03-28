@@ -71,6 +71,7 @@ const HomeScreen = props => {
   //In retrun to catch the evaluation name might need to use await
   //const evaluation: Evaluation = await evalMapper.find(task.evaluation_id);
   //once name is working also do task.due_date
+  // like {setShowComplete(!showComplete); const formattedCourses = formatData(!showComplete).then(data => { setFormattedCourseData(data);}
   var nm = "Placeholder";
   var dt = "Date Placeholder";
   
