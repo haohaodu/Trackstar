@@ -72,8 +72,8 @@ const HomeScreen = props => {
   //const evaluation: Evaluation = await evalMapper.find(task.evaluation_id);
   //once name is working also do task.due_date
   // like {setShowComplete(!showComplete); const formattedCourses = formatData(!showComplete).then(data => { setFormattedCourseData(data);}
-  var nm = "Placeholder";
-  var dt = "Date Placeholder";
+  var nm = "";
+  var dt = "";
   
   return (
     <LinearGradient
@@ -156,6 +156,8 @@ async function formatData() {
     const task = rawData[i];
     const evaluation: Evaluation = await evalMapper.find(task.evaluation_id);
     const course: Course = await courseMapper.find(evaluation.course_code);
+    nm = Evaluation = await evalMapper.find(task.title);
+    dt = Evaluation = await evalMapper.find(task.due_date);
 
     const taskInfo: TaskDescriptor = {
       task: task,
