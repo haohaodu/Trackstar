@@ -68,11 +68,6 @@ const HomeScreen = props => {
 
   const tasksMarkup = generateTasksMarkup(formattedTaskData, handleTaskCompletion);
 
-  //In retrun to catch the evaluation name might need to use await
-  //const evaluation: Evaluation = await evalMapper.find(task.title);
-  //once you get name working also do task.due_date
-  //tried doing  Next Evaluation: {evalMapper.find(task.title)}
-  //didn't recognize {Evaluation.evalName} either
   return (
     <LinearGradient
       colors={["#bcf7ed", "#5273eb"]}
@@ -83,7 +78,7 @@ const HomeScreen = props => {
           Welcome Back!
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Next Evaluation: 
+          Next Evaluation:  {console.log(await formatData.taskInfo.evalName)}
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
           Due: 
