@@ -81,7 +81,7 @@ const HomeScreen = props => {
           Welcome Back!
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Next Evaluation: {await formatData.evalMapper.find(task.title)}
+          Next Evaluation: 
         </Text>
         <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
           Due: 
