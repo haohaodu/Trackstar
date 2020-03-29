@@ -68,9 +68,7 @@ const HomeScreen = props => {
 
   const tasksMarkup = generateTasksMarkup(formattedTaskData, handleTaskCompletion);
 
-  //In retrun to catch the evaluation name might need to use await
-  //const evaluation: Evaluation = await evalMapper.find(task.evaluation_id);
-  //once name is working also do task.due_date
+  //In retrun for the evaluation name and date
   var nm = "";
   var dt = "";
   
