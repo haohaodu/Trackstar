@@ -172,17 +172,22 @@ async function formatData() {
 	
   }
 
-  nm =  evalMapper.all().then(Evaluation(title));
-  dt =  evalMapper.all().then(Evaluation(due_date));
+   nm =  await evalMapper.find(Evaluation.title);         
+   dt =  await evalMapper.all()(Evaluation.due_date);
+
+  //nm =  evalMapper.all().then(Evaluation(title));
+  //dt =  evalMapper.all().then(Evaluation(due_date));
+
 
   return formattedData;
 }
 
 async function updateTask(task: Task) {
   const taskMapper: TaskMapper = new TaskMapperImpl();
-
+  nm =  await evalMapper.find(Evaluation.title);
+  dt =  await evalMapper.all()(Evaluation.due_date); 
   taskMapper.update(task);
-  return nm;
 }
 
 export default HomeScreen;
+
