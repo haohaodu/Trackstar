@@ -71,7 +71,6 @@ const HomeScreen = props => {
   //In retrun to catch the evaluation name might need to use await
   //const evaluation: Evaluation = await evalMapper.find(task.evaluation_id);
   //once name is working also do task.due_date
-  // like {setShowComplete(!showComplete); const formattedCourses = formatData(!showComplete).then(data => { setFormattedCourseData(data);}
   var nm = "";
   var dt = "";
   
@@ -84,12 +83,18 @@ const HomeScreen = props => {
         <Text style={{ fontSize: 45, color: "white", textAlign: "center" }}>
           Welcome Back!
         </Text>
-        <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Next Evaluation: 		    {nm}
-        </Text>
-        <Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
-          Due:                    {dt}
-        </Text>
+		
+
+			<Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
+			  Next Evaluation: 		  {nm}
+			</Text>
+		
+		
+
+			<Text style={{ fontSize: 15, color: "white", textAlign: "center" }}>
+			  Due:                    {dt}
+			</Text>
+		
       </View>
       <ScrollView style={{marginTop: 50}}>
         {tasksMarkup}
@@ -156,17 +161,19 @@ async function formatData() {
     const task = rawData[i];
     const evaluation: Evaluation = await evalMapper.find(task.evaluation_id);
     const course: Course = await courseMapper.find(evaluation.course_code);
-    nm = Evaluation = await evalMapper.find(task.title);
-    dt = Evaluation = await evalMapper.find(task.due_date);
-
+	
     const taskInfo: TaskDescriptor = {
       task: task,
       evalName: evaluation.title,
       courseCode: course.code
     };
-
+    
     formattedData.push(taskInfo);
+	
   }
+
+  nm =  evalMapper.all().then(Evaluation(title));
+  dt =  evalMapper.all().then(Evaluation(due_date));
 
   return formattedData;
 }
@@ -175,6 +182,7 @@ async function updateTask(task: Task) {
   const taskMapper: TaskMapper = new TaskMapperImpl();
 
   taskMapper.update(task);
+  return nm;
 }
 
 export default HomeScreen;
