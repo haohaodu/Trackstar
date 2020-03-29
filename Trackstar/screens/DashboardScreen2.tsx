@@ -169,7 +169,6 @@ async function formatData() {
     };
     
     formattedData.push(taskInfo);
-	
   }
 
   nm =  evalMapper.all().then(task(title));         //[Unhandled promise rejection: ReferenceError: Can't find variable: task]
