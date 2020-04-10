@@ -12,7 +12,7 @@ Check out our demo video here: https://www.youtube.com/watch?v=PSPjW4BXQ3Q&amp;f
 # Launch Our App !
 
 #### Clone our repository: 
-git clone https://github.com/haohaodu/Trackstar
+git clone https://github.com/mitchmaps/Trackstar
 
 #### Navigate into our directory: 
 cd Trackstar/Trackstar
