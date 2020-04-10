@@ -3,8 +3,7 @@ COMP 3004: Mobile App Group Project: https://www.youtube.com/watch?v=PSPjW4BXQ3Q
 
 ## About 
 
-This project was made throughout the Winter term of 2020 at Carleton University in a team of 4. Trackstar is a mobile student productivity application that aims to help keep students on track. For a live demo check us out! https://www.youtube.com/watch?v=PSPjW4BXQ3Q&feature=youtu.be
-If you want to try it out yourself make sure to clone our repo !
+This project was made throughout the Winter term of 2020 at Carleton University in a team of 4. Trackstar is a mobile student productivity application that aims to help keep students on track. For a live demo check us out clone our repo above !
 
 ## Main Technologies Used
 
