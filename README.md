@@ -11,13 +11,17 @@ Check out our demo video here: https://www.youtube.com/watch?v=PSPjW4BXQ3Q&amp;f
 
 # Launch Our App !
 
-> Clone our repository: git clone https://github.com/haohaodu/Trackstar
+#### Clone our repository: 
+git clone https://github.com/haohaodu/Trackstar
 
-> Navigate into our directory: cd Trackstar
+#### Navigate into our directory: 
+cd Trackstar
 
-> Install any missing packages: npm install
+#### Install any missing packages: 
+npm install
 
-> You are good to go!: expo start
+#### You are good to go!: 
+expo start
 
 # Brief Overview
 
