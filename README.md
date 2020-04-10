@@ -15,7 +15,7 @@ Check out our demo video here: https://www.youtube.com/watch?v=PSPjW4BXQ3Q&amp;f
 git clone https://github.com/haohaodu/Trackstar
 
 #### Navigate into our directory: 
-cd Trackstar
+cd Trackstar/Trackstar
 
 #### Install any missing packages: 
 npm install
